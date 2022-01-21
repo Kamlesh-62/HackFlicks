@@ -37,7 +37,8 @@ header {
 h1 {
   color: red;
   font-size: 35px;
-  font-weight: 600; }
+  font-weight: 600;
+ }
 
 img {
   display: block;
