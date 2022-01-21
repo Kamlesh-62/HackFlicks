@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 const Catalogue = () => {
     const [allMovies, setAllMovies] = useState([]);
 
@@ -31,7 +31,9 @@ const Catalogue = () => {
 
             return (
                 <li key={id} >
-                    <img src={`https://image.tmdb.org/t/p/w500${poster_path}`} alt={original_title} />
+                    <Link to={`/movie/${id}`} > 
+                        <img src={`https://image.tmdb.org/t/p/w500${poster_path}`} alt={original_title} />
+                    </Link>
                 </li>
                 )
             })
